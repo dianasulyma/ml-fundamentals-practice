@@ -1,6 +1,6 @@
 ### Machine Learning Fundamentals
 
-A collection of hands-on implementations and experiments exploring machine learning concepts. This repository serves as a learning notebook for understanding how machine learning algorithms work. 
+A collection of hands-on implementations and experiments exploring machine learning concepts from my university and self-studies. This is a learning notebook for understanding how machine learning algorithms work. 
 
 #### Topics
 
