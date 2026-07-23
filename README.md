@@ -1,6 +1,6 @@
 ### Machine Learning Fundamentals
 
-A collection of hands-on implementations and experiments exploring machine learning concepts from my university and self-studies. This is a learning notebook for understanding how machine learning algorithms work. 
+A collection of implementations and experiments exploring machine learning concepts from my university studies. This is a learning notebook for understanding how machine learning algorithms work. 
 
 #### Topics
 
@@ -30,11 +30,9 @@ A collection of hands-on implementations and experiments exploring machine learn
 
 ```
 machine-learning-fundamentals/
-├── linear-regression/
+├── linear-regression_from_scratch/
 ├── gradient-descent/
 ├── feature-selection/
 ├── hyperparameter-tuning/
-├── regularization/
-├── model-evaluation/
 └── ...
 ```
