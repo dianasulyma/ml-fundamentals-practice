@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Linear Regression
 
 ### Objective
