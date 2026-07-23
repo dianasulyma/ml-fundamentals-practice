@@ -8,6 +8,8 @@ A collection of hands-on implementations and experiments exploring machine learn
 - Gradient Descent Optimization
 - Feature Selection
 - Hyperparameter Optimization
+
+##### (Upcoming)
 - Regularization (L1 & L2)
 - Cross Validation
 - Model Evaluation Metrics
