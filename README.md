@@ -2,7 +2,7 @@
 
 This is a learning repo for understanding how machine learning algorithms work. 
 
-It holds a collection of implementations and experiments exploring machine learning concepts from my university studies. Code is generelly referenced from others as I was still in my learning process :)
+It holds a collection of implementations and experiments exploring machine learning concepts from my university studies. Code is generelly referenced from others as I was still in my learning process 👩‍💻📖
 
 #### Topics
 
