@@ -7,4 +7,6 @@ plotly
 jupyter
 jupyterlab
 tensorflow
-torch
+keras 
+keras-tuner
+imblearn

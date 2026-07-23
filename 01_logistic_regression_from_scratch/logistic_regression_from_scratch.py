@@ -1,12 +1,11 @@
 import numpy as np
-import csv
 
-# load data
+# Load data
 path = 'data_path/spam.data'
 data = open(path)
 data = np.loadtxt(data, delimiter = ' ', dtype = np.float32)
 
-# split
+# Split
 data = np.array(data)
 X, y = data[:, :-1], data[:, -1]
 
@@ -106,3 +105,5 @@ if __name__ == "__main__":
         "Logistic Regression classification accuracy:",
         model.accuracy(y, predictions)
     )
+
+    
