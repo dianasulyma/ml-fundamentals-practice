@@ -1,12 +1,12 @@
 import numpy as np
 import csv
 
-# Load data
+# load data
 path = 'data_path/spam.data'
 data = open(path)
 data = np.loadtxt(data, delimiter = ' ', dtype = np.float32)
 
-# Split
+# split
 data = np.array(data)
 X, y = data[:, :-1], data[:, -1]
 
