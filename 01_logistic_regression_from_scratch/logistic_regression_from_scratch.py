@@ -37,38 +37,38 @@ class LogisticRegression:
 
     def fit(self, X, y):
         n_samples, n_features = X.shape
-        # initialize parameters
+        # Initialize parameters
         self.weights = np.random.randn(n_features) * 0.01
         self.bias = 0
 
-        # minimize the loss with gradient descent
+        # Minimize the loss with gradient descent
         for _ in range(self.n_iters):
             y_pred = self.feed_forward(X)
             dz = y_pred - y # difference between predictions and real values
 
-            # compute gradients and apply regularization 
+            # Compute gradients and apply regularization 
             dw = (1 / n_samples) * np.dot(X.T, dz)
 
             # L2 regularization gradient
             dw += (self.lamda / n_samples) * self.weights
 
             db = (1 / n_samples) * np.sum(dz)
-            # update parameters
+            # Update parameters
             self.weights -= self.lr * dw
             self.bias -= self.lr * db
 
-    # the sigmoid function maps the probability to be between 1 and 0 
+    # The sigmoid function maps the probability to be between 1 and 0 
     def _sigmoid(self, x):
         return 1 / (1 + np.exp(-x))     
 
-    # loss function
+    # Loss function
     def loss_function(self, y_true, y_pred):
         # given this a binary classification problem, we use the cross entropy 
         loss = -np.mean(y_true * np.log(y_pred) + (1-y_true) * np.log(1-y_pred))
         regularization = (self.lamda / (2 * len(y_true))) * np.sum(self.weights ** 2) # define l2 to the loss function 
         return loss + regularization 
     
-    # feed forward 
+    # Forward propagation
     def feed_forward(self,X):
         z = np.dot(X, self.weights) + self.bias # summing the inputs, weights and bias
         return self._sigmoid(z) # applying sigmoid to the sum 
@@ -86,7 +86,7 @@ class LogisticRegression:
 
 if __name__ == "__main__":
 
-    # train model
+    # Train model
     model = LogisticRegression(
         lr=0.1,
         n_iters=1000,
@@ -95,12 +95,10 @@ if __name__ == "__main__":
 
     model.fit(X, y)
 
-
-    # predictions
+    # Predictions
     predictions = model.predict(X)
 
-
-    # evaluate
+    # Evaluate
     print(
         "Logistic Regression classification accuracy:",
         model.accuracy(y, predictions)
